@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    My Test Website
+{% endblock %}
+
+{% block body %}
+    <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare purus mi, ac porta nulla cursus a. Donec malesuada orci nec porttitor ullamcorper. Maecenas ut leo id erat faucibus fringilla et sed ligula. Aenean ultrices pretium fringilla. Mauris viverra efficitur nulla, id volutpat enim sodales et. Proin gravida lacinia massa tempor mollis. Nunc sagittis augue et purus laoreet, eget ullamcorper nibh efficitur.
+
+            Aliquam ultricies, ipsum sed dictum condimentum, libero velit cursus metus, non pellentesque felis metus sit amet orci. Vestibulum eget hendrerit massa. Sed tellus mi, pulvinar vel erat faucibus, aliquet tempor lectus. Donec commodo neque nisi, ac tincidunt libero venenatis a. Ut fringilla scelerisque metus, id aliquet sem aliquam at. Nulla et auctor lorem, eget ultricies erat. Nullam bibendum commodo felis, vitae mattis dolor luctus sit amet. Quisque non urna a nisl semper tincidunt id vitae erat. Integer interdum eget tortor ac dapibus. Mauris fermentum ac felis id auctor. Quisque eget turpis eros.
+    </p>
+    <a href="{{ url_for('more') }}">See more...</a> 
+
+    {% include "form_input.html" %}
+{% endblock %}

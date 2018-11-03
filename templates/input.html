@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    My Test Website
+{% endblock %}
+
+{% block body %}
+    <ul>
+        {% for comment in comments %}
+                <li>{{ comment }}</li>
+        {% endfor %}
+    </ul>
+
+    {% include "form_input.html" %}
+    
+{% endblock %}
